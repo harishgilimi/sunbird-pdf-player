@@ -1,31 +1,3 @@
-export interface PdfComponentInput {
-    showPropertiesButton?: boolean;
-    textLayer?: boolean;
-    showHandToolButton?: boolean;
-    useBrowserLocale?: boolean;
-    showBookmarkButton?: boolean;
-    showBorders?: boolean;
-    startFromPage?: number;
-    contextMenuAllowed?: boolean;
-    showSidebarButton?: boolean;
-    showFindButton?: boolean;
-    showPagingButtons?: boolean;
-    showZoomButtons?: boolean;
-    showPresentationModeButton?: boolean;
-    showPrintButton?: boolean;
-    showDownloadButton?: boolean;
-    showSecondaryToolbarButton?: boolean;
-    showRotateButton?: boolean;
-    showScrollingButton?: boolean;
-    showSpreadButton?: boolean;
-    backgroundColor?: string;
-    height?: string;
-    enablePinchOnMobile?: boolean;
-    sidebarVisible?: boolean;
-}
-
-
-
 
 export interface Pdata {
         id: string;
@@ -75,6 +47,19 @@ export interface Context {
 
 // tslint:disable-next-line:no-empty-interface
 export interface Config {
+    toolBar?: {
+        showZoomButtons?: boolean;
+        showPagesButton?: boolean;
+        showPagingButtons?: boolean;
+        showSearchButton?: boolean
+        showRotateButton?: boolean;
+    };
+    sideMenu?: {
+        showShare?: boolean;
+        showDownload?: boolean;
+        showReplay?: boolean;
+        showExit?: boolean;
+    };
     [propName: string]: any;
     }
 

@@ -11,13 +11,14 @@ import { PdfMenuComponent } from './pdf-menu/pdf-menu.component';
 import { NextNavigationComponent } from './next-navigation/next-navigation.component';
 import { PreviousNavigationComponent } from './previous-navigation/previous-navigation.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { PdfViewerComponent } from './pdf-viewer/pdf-viewer.component';
 
 @NgModule({
   declarations: [
     SunbirdPdfPlayerComponent,
     HeaderComponent, DownloadPdfPopupComponent,
     StartPageComponent, EndPageComponent, PdfMenuComponent,
-    NextNavigationComponent, PreviousNavigationComponent, SidebarComponent
+    NextNavigationComponent, PreviousNavigationComponent, SidebarComponent, PdfViewerComponent
   ],
   imports: [
     CommonModule,
