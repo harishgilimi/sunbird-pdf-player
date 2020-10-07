@@ -1,12 +1,15 @@
 {
   "name": "sunbird-pdf-player",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "peerDependencies": {
     "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
+    "@angular/core": "^7.2.0",
+    "@project-sunbird/client-services": "^3.3.27"
   },
   "dependencies": {
-    "@project-sunbird/client-services": "3.3.26",
     "ngx-extended-pdf-viewer": "^4.1.2"
+  },
+  "devDependencies": {
+    "@project-sunbird/client-services": "^3.3.27"
   }
 }

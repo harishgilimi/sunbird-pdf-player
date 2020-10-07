@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "create-package": "ng build sunbird-pdf-player && node assets-copy.js && cd dist/sunbird-pdf-player && npm pack && cd ../..  && npm i dist/sunbird-pdf-player/sunbird-pdf-player-0.0.14.tgz"
+    "create-package": "ng build sunbird-pdf-player && node assets-copy.js && cd dist/sunbird-pdf-player && npm pack && cd ../..  && npm i dist/sunbird-pdf-player/sunbird-pdf-player-0.0.15.tgz"
   },
   "private": true,
   "dependencies": {
@@ -20,9 +20,10 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "@project-sunbird/client-services": "^3.3.27",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
-    "sunbird-pdf-player": "file:dist/sunbird-pdf-player/sunbird-pdf-player-0.0.14.tgz",
+    "sunbird-pdf-player": "file:dist/sunbird-pdf-player/sunbird-pdf-player-0.0.15.tgz",
     "tslib": "^1.9.0",
     "zone.js": "~0.10.3"
   },

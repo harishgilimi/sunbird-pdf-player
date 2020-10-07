@@ -5,7 +5,6 @@
     "entryFile": "src/public-api.ts"
   },
   "whitelistedNonPeerDependencies": [
-    "ngx-extended-pdf-viewer",
-    "@project-sunbird/client-services"
+    "ngx-extended-pdf-viewer"
   ]
 }
