@@ -121,9 +121,13 @@ export class SunbirdPdfPlayerComponent implements OnInit, OnDestroy, OnChanges {
 
   @HostListener('window:beforeunload')
   ngOnDestroy() {
-    this.pdfPlayerService.pageSessionUpdate();
-    this.pdfPlayerService.raiseEndEvent();
+    if (this.pdfPlayerService) {
+      this.pdfPlayerService.pageSessionUpdate();
+      this.pdfPlayerService.raiseEndEvent();
+    }
     this.pdfViewerCleanUp();
-    this.subscription.unsubscribe();
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
   }
 }
